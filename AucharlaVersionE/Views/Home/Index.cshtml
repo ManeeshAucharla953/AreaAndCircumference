@@ -1,0 +1,40 @@
+﻿
+@*
+    Created by Aucharla Maneesh - 700731564
+*@
+
+@model AucharlaVersionE.Models.AucharlaModel
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aucharla Version E</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+
+    <h1>Aucharla Area of Circle</h1>
+
+    <form asp-controller="Home" asp-action="Results" method="post">
+
+        <p>
+            <label asp-for="Measurement"></label>
+            <input asp-for="Measurement" />
+            <span asp-validation-for="Measurement"></span>
+        </p>
+        <p>
+            <label asp-for="IsDiameter"></label>
+            <input asp-for="IsDiameter" />
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+
+</body>
+
+</html>
